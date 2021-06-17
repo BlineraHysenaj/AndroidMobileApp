@@ -2,6 +2,7 @@ package com.example.mytherapy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -19,5 +20,9 @@ Button btnLogin;
         etPassword = findViewById(R.id.etPassword);
 
         btnLogin = findViewById(R.id.btnLogin);
+
+        etUsername.setText("Blinera.Hysenaj");
+        btnLogin.setBackgroundColor(Color.YELLOW);
+        btnLogin.setTextColor(Color.BLACK);
     }
 }
