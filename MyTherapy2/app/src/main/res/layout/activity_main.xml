@@ -10,6 +10,13 @@
     android:padding="16dp"
     >
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="246dp"
+        android:src="@drawable/photo1"
+        app:layout_constrainStart_toStartOf="parent"
+        app:layout_constrainStart_toTopOf="parent">
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -42,11 +49,6 @@
         android:id="@+id/etPassword"
         android:imeOptions="actionDone"
         android:inputType="textPassword"></EditText>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_weight="1">
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,19 +56,6 @@
         android:text="Register"
         android:id="@+id/btnRegister"
         android:layout_gravity="left"
+        />
 
-        android:layout_weight="1"
-      ></Button>
 
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="right"
-        android:text="Login"
-        android:textSize="22sp"
-        android:layout_weight="1">
-
-    </Button>
-
-</LinearLayout>
