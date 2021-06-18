@@ -14,13 +14,12 @@
         android:layout_width="wrap_content"
         android:layout_height="246dp"
         android:src="@drawable/photo1"
-        app:layout_constrainStart_toStartOf="parent"
-        app:layout_constrainStart_toTopOf="parent">
+       />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Username"
+        android:text="@string/tv_username"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -36,7 +35,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Password"
+        android:text="@string/tv_password"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -49,13 +48,28 @@
         android:id="@+id/etPassword"
         android:imeOptions="actionDone"
         android:inputType="textPassword"></EditText>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="22sp"
-        android:text="Register"
+        android:text="@string/btn_register"
         android:id="@+id/btnRegister"
         android:layout_gravity="left"
+        android:layout_weight="1"
         />
-
-
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:text="@string/btn_login"
+            android:id="@+id/btnLogin"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+</LinearLayout>

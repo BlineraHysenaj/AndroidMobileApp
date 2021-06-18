@@ -10,6 +10,7 @@ import android.widget.EditText;
 public class MainActivity extends AppCompatActivity {
 EditText etUsername, etPassword;
 Button btnLogin;
+Button btnRegister;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +21,7 @@ Button btnLogin;
         etPassword = findViewById(R.id.etPassword);
 
         btnLogin = findViewById(R.id.btnLogin);
+        btnRegister = findViewById(R.id.btnRegister);
 
         etUsername.setText("Blinera.Hysenaj");
         btnLogin.setBackgroundColor(Color.YELLOW);
