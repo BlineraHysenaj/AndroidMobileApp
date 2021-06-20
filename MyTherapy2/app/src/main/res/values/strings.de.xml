@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">My Therapy</string>
-    <string name="tv_username">Nutzername</string>
-    <string name="tv_password">Passwort</string>
-    <string name="btn_login">Anmeldung</string>
-    <string name="btn_register">Registrieren</string>
-</resources>

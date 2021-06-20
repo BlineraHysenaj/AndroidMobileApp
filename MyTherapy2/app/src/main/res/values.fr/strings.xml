@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name">My Therapy</string>
-    <string name="tv_username">Perdoruesi</string>
-    <string name="tv_password">Fjalekalimi</string>
-    <string name="btn_login">Kyqu</string>
-    <string name="btn_register">Regjistrohu</string>
-</resources>
