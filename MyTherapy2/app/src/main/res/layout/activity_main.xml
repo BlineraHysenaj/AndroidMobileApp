@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="22sp"
-        android:id="@+id/etUsername"
+        android:id="@+id/etUsernameLogin"
         android:imeOptions="actionNext"
         android:inputType="text"></EditText>
     <TextView
@@ -45,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="22sp"
-        android:id="@+id/etPassword"
+        android:id="@+id/etPasswordLogin"
         android:imeOptions="actionDone"
         android:inputType="textPassword"></EditText>
     
@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:textSize="22sp"
         android:text="@string/btn_register"
-        android:id="@+id/btnRegister"
+        android:id="@+id/btnRegister1"
         android:layout_gravity="left"
         android:layout_weight="1"
         />
@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:textSize="22sp"
             android:text="@string/btn_login"
-            android:id="@+id/btnLogin"
+            android:id="@+id/btnLogin1"
             android:layout_gravity="right"
             android:layout_weight="1"
             />
