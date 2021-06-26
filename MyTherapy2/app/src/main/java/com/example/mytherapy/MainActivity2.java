@@ -3,6 +3,7 @@ package com.example.mytherapy;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -29,20 +30,24 @@ public class MainActivity2 extends AppCompatActivity {
         etPassword = findViewById(R.id.etPassword);
         etConfirmPassword = findViewById(R.id.etConfirmPassword);
 
-        firebaseAuth.getInstance();
+//        firebaseAuth.getInstance();
+        firebaseAuth= firebaseAuth.getInstance();
 
 
         btnRegister.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity2.this,"Mire se vini ne aplikacionin tone!", Toast.LENGTH_LONG).show();
+//                Toast.makeText(MainActivity2.this,"Mire se vini ne aplikacionin tone!", Toast.LENGTH_LONG).show();
                 String email = etUsername.getText().toString();
                 String password = etPassword.getText().toString();
                 firebaseAuth.createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
-
+                                if(task.isSuccessful()){
+                                    startActivity(new Intent(MainActivity2.this, AddInfo.class));
+                                    finish();
+                                }
                             }
 
 

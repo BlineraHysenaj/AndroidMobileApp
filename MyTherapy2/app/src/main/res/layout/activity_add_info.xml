@@ -11,95 +11,148 @@
     android:padding="16dp">
 
 
-    <TextView
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Personal Information"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:textSize="40sp"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textColor="@color/design_default_color_on_secondary"-->
+<!--        android:padding="16dp"-->
+
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/etName"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:imeOptions="actionNext"-->
+<!--        android:inputType="text"-->
+<!--        android:textSize="22sp"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:hint="Name"></EditText>-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/etAge"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:imeOptions="actionNext"-->
+<!--        android:inputType="text"-->
+<!--        android:textSize="22sp"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:hint="Age"></EditText>-->
+
+<!--    <RadioGroup-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:padding="15dp">-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/Female"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_marginLeft="60dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:buttonTint="#1A99C4"-->
+<!--            android:text="Female" />-->
+
+<!--        <RadioButton-->
+<!--            android:id="@+id/Male"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:buttonTint="#1A99C4"-->
+<!--            android:text="Male" />-->
+<!--    </RadioGroup>-->
+
+
+
+
+
+<!--    <Button-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textSize="22sp"-->
+<!--        android:text="Add Therapy"-->
+<!--        android:id="@+id/btnAddTherapy"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_margin="16dp"-->
+<!--        />-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="202dp"-->
+
+<!--        android:scaleType="centerCrop"-->
+<!--        android:src="@drawable/photo2"-->
+
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+
+<!--        />-->
+
+
+
+
+<!--<TextView-->
+<!--    android:layout_width="fill_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="hello" />-->
+<!--<Button-->
+<!--    android:id="@+id/startSetDialog"-->
+<!--    android:layout_width="fill_parent"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="Set Target Time"/>-->
+<!--<TextView-->
+<!--    android:id="@+id/alarmprompt"-->
+<!--    android:layout_width="fill_parent"-->
+<!--    android:layout_height="wrap_content" />-->
+<!--</LinearLayout>-->
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="http://android-er.blogspot.com/"
+android:textStyle="bold"
+android:layout_gravity="center_horizontal"
+android:autoLink="web" />
+
+<ScrollView
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <DatePicker
+        android:id="@+id/pickerdate"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Personal Information"
-        android:layout_gravity="center"
-        android:textSize="40sp"
-        android:textStyle="bold"
-        android:textColor="@color/design_default_color_on_secondary"
-        android:padding="16dp"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <EditText
-        android:id="@+id/etName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:imeOptions="actionNext"
-        android:inputType="text"
-        android:textSize="22sp"
-        android:layout_margin="10dp"
-        android:hint="Name"></EditText>
-
-    <EditText
-        android:id="@+id/etAge"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:imeOptions="actionNext"
-        android:inputType="text"
-        android:textSize="22sp"
-        android:layout_margin="10dp"
-        android:hint="Age"></EditText>
-
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="15dp">
-
-        <RadioButton
-            android:id="@+id/Female"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="60dp"
-            android:layout_weight="1"
-            android:buttonTint="#1A99C4"
-            android:text="Female" />
-
-        <RadioButton
-            android:id="@+id/Male"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:buttonTint="#1A99C4"
-            android:text="Male" />
-    </RadioGroup>
-
-
-
-
-
+        android:layout_height="wrap_content"/>
+    <TimePicker
+        android:id="@+id/pickertime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/setalarm"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="22sp"
-        android:text="Add Therapy"
-        android:id="@+id/btnAddTherapy"
-        android:layout_gravity="center"
-        android:layout_margin="16dp"
-        />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="202dp"
-
-        android:scaleType="centerCrop"
-        android:src="@drawable/photo2"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-
-        app:layout_constraintTop_toTopOf="parent"
-
-        />
-
-
+        android:text="Set Alarm"/>
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
+</ScrollView>
+
+    </LinearLayout>

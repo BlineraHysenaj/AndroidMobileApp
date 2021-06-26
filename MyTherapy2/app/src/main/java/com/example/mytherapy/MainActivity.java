@@ -54,7 +54,7 @@ FirebaseAuth firebaseAuth;
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 if(task.isSuccessful()){
-                                    startActivity(new Intent(MainActivity.this, AddInfo.class));
+                                    startActivity(new Intent(MainActivity.this, AddTherapy.class));
                                     finish();
                                 }
                             }
