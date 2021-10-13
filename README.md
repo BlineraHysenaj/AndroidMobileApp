@@ -8,6 +8,8 @@ Ky aplikacion do ua lehtësoj përditshmërinë e njerëzve, pasi qëllimi i apl
 - [x]  ditës
 - [x]  muajit
 - [x]  vitit 
+
+
 Përdoruesi do të ketë mundësi së pari të regjistrohet e të kyqet në aplikacion, do mund të emëroj barnat që përdor, mund t'i listoj ata varësisht nga intervali kohor, dhe të lë alarme/reminders se kur do të i përdor.
 
 Për t'a hapur aplikacionin, paraprakisht duhet të 
