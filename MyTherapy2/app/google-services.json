@@ -1,41 +1,33 @@
 {
   "project_info": {
-    "project_number": "241985054522",
-    "project_id": "mytherapy-6099e",
-    "storage_bucket": "mytherapy-6099e.appspot.com"
+    "project_number": "725672714257",
+    "project_id": "mytherapy1-b41a6",
+    "storage_bucket": "mytherapy1-b41a6.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:241985054522:android:121f5823aa0ea146049203",
+        "mobilesdk_app_id": "1:725672714257:android:b99db11ef774672c7411b0",
         "android_client_info": {
-          "package_name": "com.example.mytherapy"
+          "package_name": "com.example.my_therapy"
         }
       },
       "oauth_client": [
         {
-          "client_id": "241985054522-206frehdvlq8qvocqvm2bjsbik4rqff1.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.mytherapy",
-            "certificate_hash": "b7a57cd2a743f1a185dd004491dc42ba6df1f1d0"
-          }
-        },
-        {
-          "client_id": "241985054522-p3imrvvan9800iu1jadhvca9qb1bger2.apps.googleusercontent.com",
+          "client_id": "725672714257-dhg1rc45pv1fm0svnc2osepa1kding01.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCO5Oc4PhYKUeGZSi-6NMnNraKLjXBHhfM"
+          "current_key": "AIzaSyDJ0IhOIPCoU5Z3kXQpHrG5fW2OBE3pA3A"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "241985054522-p3imrvvan9800iu1jadhvca9qb1bger2.apps.googleusercontent.com",
+              "client_id": "725672714257-dhg1rc45pv1fm0svnc2osepa1kding01.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
