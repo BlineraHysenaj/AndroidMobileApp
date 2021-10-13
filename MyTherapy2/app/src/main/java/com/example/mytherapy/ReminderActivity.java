@@ -1,6 +1,8 @@
 package com.example.my_therapy;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import android.app.AlarmManager;
 import android.app.DatePickerDialog;
@@ -9,12 +11,17 @@ import android.app.TimePickerDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TimePicker;
 import android.widget.Toast;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -27,6 +34,8 @@ public class ReminderActivity extends AppCompatActivity {
     Button mSubmitbtn, mDatebtn, mTimebtn;
     EditText mTitledit;
     String timeTonotify;
+    FloatingActionButton BackButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,7 +45,17 @@ public class ReminderActivity extends AppCompatActivity {
         mDatebtn = (Button) findViewById(R.id.btnDate);                                             //assigned all the material reference to get and set data
         mTimebtn = (Button) findViewById(R.id.btnTime);
         mSubmitbtn = (Button) findViewById(R.id.btnSbumit);
+        BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
+        bottomNav.setOnNavigationItemSelectedListener(navListener);
 
+        BackButton = (FloatingActionButton) findViewById(R.id.back);                     //Floating action button to change activity
+        BackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);                                                              //Starts the new activity to add Reminders
+            }
+        });
 
         mTimebtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -164,4 +183,48 @@ public class ReminderActivity extends AppCompatActivity {
         intentBack.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(intentBack);
     }
+    private BottomNavigationView.OnNavigationItemSelectedListener navListener =
+            new BottomNavigationView.OnNavigationItemSelectedListener() {
+                @Override
+                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                    Fragment selectedFragment = null;
+
+                    switch (item.getItemId()) {
+
+
+                        case R.id.Reminder:
+                            selectedFragment = new Fragment();
+                            break;
+                    }
+
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_navigation,
+                            selectedFragment).commit();
+
+                    return true;
+                }
+            };
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if(id == R.id.add) {
+            Toast.makeText(getApplicationContext(), "Search", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(getApplicationContext(), DataParsing.class);
+            startActivity(intent);
+            return true;
+        } else if(id == R.id.SignOut) {
+            Toast.makeText(getApplicationContext(), "SignOut", Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(getApplicationContext(), Login.class);
+            startActivity(intent);
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 }
