@@ -9,4 +9,4 @@ Përdoruesi do të ketë mundësi së pari të regjistrohet e të kyqet në apli
 Për t'a hapur aplikacionin, paraprakisht duhet të keni të instaluar Android-in në paisjen tuaj, e me pas mund te bëni importimin e projektit, të krijoni nje SDK manager dhe t'a bëni run.
 
 
- 🎀  𝒞𝓇𝑒𝒶𝓉𝑒𝒹 𝒷𝓎 𝐵𝓁𝒾𝓃𝑒𝓇𝒶 & 𝐵𝓁𝑒𝓉𝒶  🎀 
+                                                          🎀  𝒞𝓇𝑒𝒶𝓉𝑒𝒹 𝒷𝓎 𝐵𝓁𝒾𝓃𝑒𝓇𝒶 & 𝐵𝓁𝑒𝓉𝒶  🎀 
