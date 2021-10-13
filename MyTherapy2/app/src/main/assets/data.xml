@@ -1,0 +1,53 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<root>
+    <rootnode>
+        <Id> 1 </Id>
+        <Name>Acetaminophen</Name>
+        <eclass>Miscellaneous analgesics</eclass>
+    </rootnode>
+    <rootnode>
+        <Id> 2 </Id>
+        <Name>Brilinta</Name>
+        <eclass>Platelet aggregation inhibitors</eclass>
+    </rootnode>
+    <rootnode>
+        <Id>3</Id>
+        <Name>Clonazepam </Name>
+        <eclass>Benzodiazepines</eclass>
+    </rootnode>
+    <rootnode>
+        <Id> 4 </Id>
+        <Name>Melatonin </Name>
+        <eclass> Miscellaneous anxiolytics, sedatives and hypnotics</eclass>
+    </rootnode>
+    <rootnode>
+        <Id> 5 </Id>
+        <Name>Methotrexate  </Name>
+        <eclass>  Antimetabolites, Antipsoriatics, Antirheumatics</eclass>
+    </rootnode>
+    <rootnode>
+        <Id> 6 </Id>
+        <Name>Trazodone  </Name>
+        <eclass>  Phenylpiperazine antidepressants</eclass>
+    </rootnode>
+    <rootnode>
+        <Id> 7 </Id>
+        <Name>Otezla  </Name>
+        <eclass>  Antirheumatics</eclass>
+    </rootnode>
+    <rootnode>
+        <Id> 8 </Id>
+        <Name>Probuphine Implant  </Name>
+        <eclass>  Probuphine</eclass>
+    </rootnode>
+    <rootnode>
+        <Id> 9 </Id>
+        <Name>Gilenya   </Name>
+        <eclass>  Selective immunosuppressants</eclass>
+    </rootnode>
+    <rootnode>
+        <Id> 10 </Id>
+        <Name>Januvia  </Name>
+        <eclass>  Dipeptidyl peptidase 4 inhibitors</eclass>
+    </rootnode>
+</root>
